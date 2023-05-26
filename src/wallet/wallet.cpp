@@ -1702,7 +1702,7 @@ bool CWallet::DummySignTx(CMutableTransaction &txNew, const std::vector<CTxOut> 
 {
     // Fill in dummy signatures for fee calculation.
     int nIn = 0;
-    const bool can_grind_r = CanGrindR();
+    Imre st bool can_grind_r = CanGrindR();
     for (const auto& txout : txouts)
     {
         CTxIn& txin = txNew.vin[nIn];
